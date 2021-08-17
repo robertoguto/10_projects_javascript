@@ -6,5 +6,5 @@ This project was developed to study JavaScript in addition to following my evolu
 
 A automatic password generator
 
-![Password Generator](/assets/password-generator-screenshot.png)
+![Password Generator](./assets-readme/password-generator-screenshot.png)
 
