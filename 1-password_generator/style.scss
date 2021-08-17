@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #8e95c7;
+}
+
+.container-generator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 800px;
+    height: 100%;
+
+    .box{
+        width: 400px;
+        height: 600px;
+        padding: 10px 15px;
+        background-color: #0a0c1b;
+        border-radius: 10px;
+
+        &__title{
+            font-size: 2.3rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        &__label{
+            display: block;
+            font-weight: bold;
+            color: #ffffff80;
+            text-transform: uppercase;
+            font-size: 0.65rem;
+            pointer-events: none;
+            margin-bottom: 5px;
+        }
+
+        .box-style{
+            display: flex;
+            align-items: center;
+            
+            background-color: #1D2141;
+            width: 100%;
+            height: 55px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        &__output{
+            position: relative;
+            justify-content: center;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            .right,
+            .left{
+                position: absolute;
+                bottom: 4px;
+                transform: translateY(20%);
+                color: #fff;
+                font-size: 0.6rem;
+                transition: all 150ms ease-in-out;
+                opacity: 0;
+
+                &--done{
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+            }
+
+            .right{
+                right: 8px;
+            }
+
+            .left{
+                left: 8px;
+            }
+        }
+
+        &__output.done{
+            transition: 0.2s ease-in-out;
+            
+            &:hover{
+                cursor: pointer;
+                background-color: #24274b;
+            }
+        }
+
+        &__settings{
+            position: relative;
+            justify-content: space-between;
+            padding: 20px;
+
+            input{
+                opacity: 0;
+                position: absolute;
+
+                + label {
+                    margin-bottom: 0;
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        transition: 150ms cubic-bezier(0.24, 0, 0.5, 1);
+                        transform: translateY(-50%);
+                        top: 50%;
+                        right: 10px;
+                        cursor: pointer;
+                    }
+
+                    &::before {
+                        height: 30px;
+                        width: 50px;
+                        border-radius: 30px;
+                        background: rgba(214, 214, 214, 0.434);
+                    }
+
+                    &::after {
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 60px;
+                        right: 32px;
+                        background: #fff;
+                    }
+                }
+
+                &:checked {
+                    & + label:before {
+                        background: #5d68e2;
+                        transition: all 150ms cubic-bezier(0, 0, 0, 0.1);
+                    }
+                    & + label:after {
+                        right: 14px;
+                    }
+                }
+            }
+        }
+
+        &__button{
+            padding: 5px 0;
+            border-radius: 5px;
+            color: white;
+            outline: none;
+            border: none;
+            background: #5d68e2;
+            transition: 0.2s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #3e469b;
+            }
+        }
+    }
+}
+
