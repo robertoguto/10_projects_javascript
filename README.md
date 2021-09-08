@@ -12,4 +12,4 @@ A automatic password generator
 
 List for tasks
 
-![Todo List](/assets/todo-list-screenshot.png)
+![Todo List](./assets-readme/todo-list-screenshot.png)
