@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #171723;
+}
+
+.cover {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(135deg, #3B2667 10%, #BC78EC 100%);
+}
+
+.box-todo {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 30px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.box-todo__header {
+  margin-bottom: 30px;
+}
+.box-todo__header .title {
+  color: #fff;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  font-size: 38px;
+}
+.box-todo__input {
+  display: flex;
+  background-color: #32344e;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.box-todo__input .button-add {
+  background: transparent;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #a6abd8;
+  color: #a6abd8;
+  line-height: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.box-todo__input .button-add i {
+  font-size: 10px;
+  transition: 0.2s ease-in-out;
+}
+.box-todo__input .button-add:hover {
+  border-color: #c7cbf5;
+  color: #c7cbf5;
+}
+.box-todo__input .input-field {
+  flex: 1;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #a6abd8;
+}
+.box-todo__todos {
+  margin-bottom: 30px;
+}
+.box-todo__todos .item {
+  padding: 10px 20px;
+  background-color: #32344e;
+  font-size: 23px;
+  color: #a6abd898;
+  cursor: pointer;
+}
+.box-todo__todos .item--done {
+  text-decoration: line-through;
+}
+.box-todo__todos .item {
+  border-radius: 5px;
+}
+.box-todo__todos .item + .item {
+  border-radius: 0 0 5px 5px;
+  border-top: 1px solid #a6abd898;
+}
+.box-todo__footer {
+  display: none;
+  text-align: center;
+  color: #a6abd8;
+}
+.box-todo__footer span {
+  display: block;
+}
+.box-todo .footer--show {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

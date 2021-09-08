@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #171723;
+}
+
+.cover{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+}
+
+.box-todo{ 
+    max-width: 600px;
+    width: 100%;
+    padding: 0 30px;
+
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__header{
+        margin-bottom: 30px;
+
+        .title{
+            color: #fff;
+            letter-spacing: 0.5rem;
+            font-weight: 500;
+            font-size: 38px;
+        }
+    }
+
+    &__input{
+        display: flex;
+
+        background-color: #32344e;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+
+        .button-add{
+            background: transparent;
+            outline: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #a6abd8;
+            color: #a6abd8;
+            line-height: 10px;
+            cursor: pointer;
+
+            transition: 0.2s ease-in-out;
+
+            i{
+                font-size: 10px;
+                transition: 0.2s ease-in-out;
+            }
+
+            &:hover{
+                border-color: #c7cbf5;
+                color: #c7cbf5;
+            }
+        }
+
+        .input-field{
+            flex: 1;
+            margin-left: 20px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: #a6abd8;
+        }
+    }
+
+    &__todos{
+        margin-bottom: 30px;
+
+        .item{
+            padding: 10px 20px;
+            background-color: #32344e;
+            font-size: 23px;
+            color: #a6abd898;
+            cursor: pointer;
+        }
+
+        .item--done{
+            text-decoration: line-through;
+        }
+
+        .item{
+            border-radius: 5px;
+        }
+        
+        .item + .item{
+            border-radius: 0 0 5px 5px;
+            border-top: 1px solid #a6abd898;
+        }
+    }
+
+    &__footer{
+        display: none;
+        text-align: center;
+        color: #a6abd8;
+
+        span{
+            display: block;
+        }
+    }
+
+    .footer--show{
+        display: block;
+    }
+}
+
+
+
+
+

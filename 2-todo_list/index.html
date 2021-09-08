@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Bootstrap CSS -->
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"
+        />
+
+        <!--Font Awesome-->
+
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous"
+        />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+        <!-- Link Css -->
+        <link rel="stylesheet" href="style.css">
+        <title>Todo list</title>
+    </head>
+    <body>
+        <header class="cover"></header>
+        <section class="box-todo">
+            <div class="box-todo__header">
+                <h1 class="title">TODO</h1>
+            </div>
+
+            <div class="box-todo__input">
+                <button class="button-add" type="button" data-btn-add>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <input class="input-field" placeholder="Create a new todo..." type="text" data-input>
+            </div>
+
+            <ul class="box-todo__todos" data-todo-list></ul>
+            <div class="box-todo__footer" data-footer>
+                <span>Click the left mouse button to finish.</span>
+                <span>Click with the right mouse button to delete.</span>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
