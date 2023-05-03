@@ -1,4 +1,4 @@
-# 10 Projects in JavaScript 🛠️
+# Projects in JavaScript 🛠️
 
 This project was developed to study JavaScript in addition to following my evolution.
 
